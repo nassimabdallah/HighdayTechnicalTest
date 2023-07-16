@@ -15,7 +15,7 @@
         <Suspense>
             <ProfilePicture />
             <template #fallback>
-                Loading...
+                <ProfilePictureSkeleton />
             </template>
         </Suspense>
     </header>
@@ -23,6 +23,7 @@
 
 <script setup>
 import ProfilePicture from './ProfilePicture.vue';
+import ProfilePictureSkeleton from './ProfilePictureSkeleton.vue';
 
 
 </script>

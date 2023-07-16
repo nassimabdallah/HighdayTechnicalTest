@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+$primary: #0804DB;
+$bg_main: #DEEAF6;
+$logo_path: "./src/assets/highday-logomark.svg";
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.highday-logo {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url($logo_path);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+    margin-left: 0.3125rem;
+}

@@ -1,0 +1,44 @@
+{
+    "id": 95,
+    "avatar_url": "https://reqres.in/img/faces/3-image.jpg",
+    "email": "emma.wong@reqres.in",
+    "first_name": "Jhon",
+    "last_name": "Mathew",
+    "primary_color": "#0804db",
+    "tasks": [
+        {
+            "id": 1,
+            "date": "12/02/2022",
+            "start-time": "09:00",
+            "end-time": "10:00",
+            "title": "Mobile app design",
+            "members": [
+                {
+                    "name": "Mike",
+                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                },
+                {
+                    "name": "Anita",
+                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "date": "12/02/2022",
+            "start-time": "10:00",
+            "end-time": "11:20",
+            "title": "Software Testing",
+            "members": [
+                {
+                    "name": "Anita",
+                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                },
+                {
+                    "name": "David",
+                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                }
+            ]
+        }
+    ]
+}

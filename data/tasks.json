@@ -1,7 +1,7 @@
 {
     "id": 95,
-    "avatar_url": "https://reqres.in/img/faces/3-image.jpg",
-    "email": "emma.wong@reqres.in",
+    "avatar_url": "https://reqres.in/img/faces/5-image.jpg",
+    "email": "jhon.mathew@reqres.in",
     "first_name": "Jhon",
     "last_name": "Mathew",
     "primary_color": "#0804db",
@@ -15,7 +15,7 @@
             "members": [
                 {
                     "name": "Mike",
-                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                    "avatar_url": "https://reqres.in/img/faces/1-image.jpg"
                 },
                 {
                     "name": "Anita",
@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "David",
-                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                    "avatar_url": "https://reqres.in/img/faces/8-image.jpg"
                 }
             ]
         }

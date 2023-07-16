@@ -12,13 +12,18 @@
                 <i class="highday-logo"></i>
             </a>
         </div>
-        <div class="">
-            User
-        </div>
+        <Suspense>
+            <ProfilePicture />
+            <template #fallback>
+                Loading...
+            </template>
+        </Suspense>
     </header>
 </template>
 
 <script setup>
+import ProfilePicture from './ProfilePicture.vue';
+
 
 </script>
 

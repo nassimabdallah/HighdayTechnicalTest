@@ -8,7 +8,7 @@
     "tasks": [
         {
             "id": 1,
-            "date": "12/02/2022",
+            "date": "16/07/2023",
             "start-time": "09:00",
             "end-time": "10:00",
             "title": "Mobile app design",
@@ -25,7 +25,7 @@
         },
         {
             "id": 2,
-            "date": "12/02/2022",
+            "date": "16/07/2023",
             "start-time": "10:00",
             "end-time": "11:20",
             "title": "Software Testing",
@@ -37,6 +37,23 @@
                 {
                     "name": "David",
                     "avatar_url": "https://reqres.in/img/faces/8-image.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "date": "16/07/2023",
+            "start-time": "13:00",
+            "end-time": "14:00",
+            "title": "Web Development",
+            "members": [
+                {
+                    "name": "Mike",
+                    "avatar_url": "https://reqres.in/img/faces/1-image.jpg"
+                },
+                {
+                    "name": "Anita",
+                    "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
                 }
             ]
         }

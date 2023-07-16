@@ -7,13 +7,21 @@ $logo_path: "./src/assets/highday-logomark.svg";
 @import "../../node_modules/bulma/bulma.sass";
 
 .highday-logo {
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url($logo_path);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    vertical-align: middle;
-    margin-left: 0.3125rem;
+}
+
+.bg-main {
+    background: $bg_main;
+}
+
+.is-transparent {
+    background-color: hsl(0, 0%, 100%, 0);
+}
+
+.is-fullscreen {
+    width: 100vw;
+    height: 100vh;
 }

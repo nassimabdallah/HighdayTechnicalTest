@@ -9,8 +9,8 @@
         {
             "id": 1,
             "date": "16/07/2023",
-            "start-time": "09:00",
-            "end-time": "10:00",
+            "start_time": "09:00",
+            "end_time": "10:00",
             "title": "Mobile app design",
             "members": [
                 {
@@ -26,8 +26,8 @@
         {
             "id": 2,
             "date": "16/07/2023",
-            "start-time": "10:00",
-            "end-time": "11:20",
+            "start_time": "10:00",
+            "end_time": "11:20",
             "title": "Software Testing",
             "members": [
                 {
@@ -43,8 +43,8 @@
         {
             "id": 3,
             "date": "16/07/2023",
-            "start-time": "13:00",
-            "end-time": "14:00",
+            "start_time": "13:00",
+            "end_time": "14:00",
             "title": "Web Development",
             "members": [
                 {
@@ -54,6 +54,10 @@
                 {
                     "name": "Anita",
                     "avatar_url": "https://reqres.in/img/faces/3-image.jpg"
+                },
+                {
+                    "name": "David",
+                    "avatar_url": "https://reqres.in/img/faces/8-image.jpg"
                 }
             ]
         }

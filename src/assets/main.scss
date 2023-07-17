@@ -1,9 +1,5 @@
 @charset "utf-8";
-
-$primary: #0804DB;
-$bg_main: #DEEAF6;
-$logo_path: "./src/assets/highday-logomark.svg";
-
+@import "./variable.scss";
 @import "../../node_modules/bulma/bulma.sass";
 
 .highday-logo {

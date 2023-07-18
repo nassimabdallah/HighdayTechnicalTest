@@ -2,7 +2,7 @@
     <section class="task-navigation px-2">
         <h1 class="is-size-4 has-text-weight-bold my-2">Ongoing</h1>
         <TaskCard
-            v-for="task in tasks"
+            v-for="task in dailyTasks"
             :key="task"
             :task="task"
         />
@@ -15,8 +15,10 @@ import axios from 'axios';
 import { ref } from 'vue';
 
 const tasks = ref([]);
+const dailyTasks = ref([]);
+const date = ref(new Date('2023-07-17').toLocaleDateString('fr-FR'))
 
-const getTask = async () => {
+const getTasks = async () => {
     try {
         const userData = await axios.get('./data/tasks.json')
         return userData.data.tasks
@@ -25,7 +27,15 @@ const getTask = async () => {
     }
 }
 
-tasks.value = await getTask()
+tasks.value = await getTasks();
+
+// Get tasks for the day selected only
+const getDailyTasks = () => {
+    return tasks.value.filter(dateTask => dateTask.date === date.value)
+}
+
+dailyTasks.value = getDailyTasks()
+
 </script>
 
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 <template>
-    <header class="is-mobile is-flex is-justify-content-space-between is-align-items-center p-2">
+    <header class="is-mobile is-flex is-justify-content-space-between is-align-items-center">
         <div>
             <button class="button is-transparent">
                 <span class="icon">

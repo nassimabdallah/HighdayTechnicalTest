@@ -15,7 +15,7 @@ defineProps({
         type: String,
         default: "Mon"
     }
-})
+});
 </script>
 
 <style lang="scss" scoped>

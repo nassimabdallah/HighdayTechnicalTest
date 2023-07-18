@@ -24,13 +24,13 @@ const props = defineProps({
         type: Object,
         default: null
     }
-})
+});
 
 const getMembersTask = () => {
     const members = props.task.members.map(member => member.name);
     const lastMember = members.pop();
     return members.join(", ") + ' and ' + lastMember;
-}
+};
 
 const formatAMPM = (time) => {
     let [ hour, minutes ] = time.split(':');
@@ -39,8 +39,7 @@ const formatAMPM = (time) => {
     hour = hour ? hour : 12; // the hour '0' should be '12'
     const strTime = hour + ':' + minutes + ' ' + ampm;
     return strTime;
-}
-
+};
 
 </script>
 

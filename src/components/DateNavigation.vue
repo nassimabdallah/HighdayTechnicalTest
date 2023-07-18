@@ -49,8 +49,7 @@ const days = ref([
         day: 20,
         label: "Thu"
     },
-])
-
+]);
 </script>
 
 <style lang="scss" scoped>

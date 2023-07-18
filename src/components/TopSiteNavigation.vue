@@ -24,8 +24,6 @@
 <script setup>
 import ProfilePicture from './ProfilePicture.vue';
 import ProfilePictureSkeleton from './ProfilePictureSkeleton.vue';
-
-
 </script>
 
 <style lang="scss" scoped>

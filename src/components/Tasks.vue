@@ -6,12 +6,8 @@
                 <span v-for="time in timeObj" class="is-size-7">{{ time.strTime }}</span>
             </div>
             <div class="tasks">
-                <TaskCard 
-                    v-for="task in dailyTasks" 
-                    :key="task" 
-                    :task="task"
-                    :style="{'grid-row-start': task.start_time.split(':')[0], 'grid-row-end': task.end_time.split(':')[0]}" 
-                />
+                <TaskCard v-for="task in dailyTasks" :key="task" :task="task"
+                    :style="{ 'grid-row-start': task.start_time.split(':')[0], 'grid-row-end': task.end_time.split(':')[0] }" />
             </div>
         </div>
     </section>
@@ -24,16 +20,16 @@ import { ref, computed } from 'vue';
 
 const tasks = ref([]);
 const dailyTasks = ref([]);
-const date = ref(new Date('2023-07-17').toLocaleDateString('fr-FR'))
+const date = ref(new Date('2023-07-17').toLocaleDateString('fr-FR'));
 const timeObj = ref([]);
 const timelineLength = timeObj.value.length;
 
 const getTasks = async () => {
     try {
-        const userData = await axios.get('./data/tasks.json')
-        return userData.data.tasks
+        const userData = await axios.get('./data/tasks.json');
+        return userData.data.tasks;
     } catch (error) {
-        console.error(error)
+        console.error(error);
     }
 }
 
@@ -41,17 +37,19 @@ tasks.value = await getTasks();
 
 // Get tasks for the day selected only
 const getDailyTasks = () => {
-    return tasks.value.filter(dateTask => dateTask.date === date.value)
+    return tasks.value.filter(dateTask => dateTask.date === date.value);
 }
 
 dailyTasks.value = getDailyTasks()
 
+// get the day's start and end times 
 const timelineSchedule = computed(() => {
     const start = Math.min(...dailyTasks.value.map(task => parseInt(task.start_time)));
     const end = Math.max(...dailyTasks.value.map(task => parseInt(task.end_time)));
-    return {start, end}
+    return { start, end };
 })
 
+// creates the day's timeline with start and end times 
 const getTimeline = () => {
     let obj = {};
     let id = 1;
@@ -60,15 +58,13 @@ const getTimeline = () => {
         let hour = i % 12;
         hour = hour ? hour : 12;
         let strTime = `${hour} ${ampm}`;
-        obj[i] = {id, strTime}
+        obj[i] = { id, strTime };
         id++;
     }
     timeObj.value = obj;
 }
 
 getTimeline();
-console.log(timeObj.value);
-
 </script>
 
 <style lang="scss" scoped>

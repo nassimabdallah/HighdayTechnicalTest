@@ -11,23 +11,20 @@
 </template>
 
 <script setup>
-import axios from 'axios'
+import axios from 'axios';
 
-const getUser = async () => {
+const getUserData = async () => {
     try {
-        const userData = await axios.get('./data/tasks.json')
-        return userData.data
+        const userData = await axios.get('./data/tasks.json');
+        return userData.data;
     } catch (error) {
-        console.error(error)
+        console.error(error);
     }
-}
+};
 
-const userData = await getUser()
-
+const userData = await getUserData();
 </script>
 
 <style lang="scss" scoped>
-p{
-    line-height: 1;
-}
+p { line-height: 1; }
 </style>
